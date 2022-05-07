@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $canvas;
+    height: 100vh;
+    padding: 0 2%;
+
+    img{
+        height: 100%;
+    }
+
+    .heroWrapper{
+        margin-top: -2%;
+    }
+
+    .text{
+        background-color: $green;
+        color: $white;
+        font-family: 'Crimson Pro', serif;
+        text-align: center;
+        padding: 3%;
+        h1{
+            padding-bottom: 1%;
+            font-size: 96px;
+            line-height: 124.78px;
+            font-weight: 400;
+        }
+    }
+}

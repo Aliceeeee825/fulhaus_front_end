@@ -1,0 +1,74 @@
+.canvas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+
+    .item{
+        width: calc(94% / 3);
+        margin: 1%;
+        position: relative;
+        border-radius: 40px;
+        .imgWrapper{
+            img {
+                    border-radius: 40px;
+                }
+        }
+    }
+
+    .item:hover > .productInfo{
+        opacity: 100;
+    }
+
+    .productInfo{
+        opacity: 0;
+        transition: opacity 0.5s;
+        background-color: $blackSeeThrough;
+        color: $white;
+        border-radius: 40px;
+        font-family: 'Crimson Pro', serif;
+        font-weight: 400;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .name, .cta{
+            width: 85%;
+            margin: 5% auto;
+        }
+        .name{
+            h4{
+                font-size: 30px;
+                text-align: left;
+            }
+            p{
+                font-size: 20px;
+                margin-top: 8px;
+                line-height: 38px;
+            }
+        }
+
+        .cta{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                background-color: transparent;
+                font-size: 12px;
+                padding: 0;
+
+            }
+            span{
+                font-size: 20px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
